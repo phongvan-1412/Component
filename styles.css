@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
+} 
+
+:root{
+    --eng-green: #1A535C;
+    --mid-torquoise: #4ECDC4;
+    --mint-cream: #F7FFF7;
+    --pas-red: #FB6B6B;
+    --mauze: #FFE66D;
+    --violet: #7A00FF;
+    --pow-blue: #99B1C9;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+/* ======================================================================================== */
+/* ======================================== COMMON ======================================== */
+/* ======================================================================================== */
+/* ---------- Color ---------- */
+.black{
+    color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+.pow-blue{
+    color: var(--pow-blue);
+}
+.violet{
+    color: var(--violet);
+}
+.mauze{
+    color: var(--mauze);
+}
+.pas-red{
+    color: var(--pas-red);
+}
+.mint-cream{
+    color: var(--mint-cream);
+}
+.mid-torquoise{
+    color: var(--mid-torquoise);
+}
+.eng-green{
+    color: var(--eng-green);
+}
+
+/* ======================================================================================== */
+/* ======================================== DEFAULT ======================================== */
+/* ======================================================================================== */
+.label-icon{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 350px;
+    height: 40px;
+}
+
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+}
