@@ -1,6 +1,7 @@
 class Label {
   constructor({ ID, title, srcIcon, titleColor}) {
     this._divWrapper = document.getElementById(ID);
+    this._empty = "";
 
     this._title = title;
     if (this._divWrapper.getAttribute("data-title") !== "") {
@@ -18,8 +19,8 @@ class Label {
     }
    
     this._template = `
-      <span class="title ${this._titleColor}">${this._title}</span>
-      <img class="icon" src="${this._srcIcon}"/>
+      <span class="title ${this._titleColor ? this._titleColor : this._empty}">${this._title ? this._title : this._empty}</span>
+      <img class="icon" src="${this._srcIcon ? this._srcIcon : this._empty}"/>
     `;
   }
 
